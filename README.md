@@ -9,9 +9,9 @@ Hi!  As students of class 2021 in **Web Development & Mobile Application**, we c
 
 ## Files
 
-At the moment, all material is available in Google Drive!
+At the moment, all material is available in Google Drive 
  [Here](https://drive.google.com/drive/folders/1aywXpUXIaBCxYRNPinzlQglaqyzvrn-I).
 
  ## ToDo
 1. Use Figma to design the website.
-2. Get started coding using HTML, CSS, and JavaScript.
+2. Get started coding using HTML, CSS, and vanilla JavaScript(No framework).
