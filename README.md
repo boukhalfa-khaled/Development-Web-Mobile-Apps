@@ -9,7 +9,7 @@ Hi!  As students of class 2021 in **Web Development & Mobile Application**, we c
 
 ## Files
 
-At the moment, all material is available in Google Drive 
+At the moment, You can access all the material via Google Drive
  [Here](https://drive.google.com/drive/folders/1aywXpUXIaBCxYRNPinzlQglaqyzvrn-I).
 
  ## ToDo
