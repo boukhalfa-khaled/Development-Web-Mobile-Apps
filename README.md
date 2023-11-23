@@ -11,6 +11,9 @@ Hi!  As students of class 2021 in **Web Development & Mobile Application**, we c
 
 At the moment, You can access all the material via Google Drive
  [Here](https://drive.google.com/drive/folders/1aywXpUXIaBCxYRNPinzlQglaqyzvrn-I).
+ 
+## Design
+[Figma Design](https://www.figma.com/file/oVCo0DbcwBdaz7TMJ1Xrd0/Development-Web-%26-mobile-application?type=design&node-id=0%3A1&mode=design&t=10CHSMkuGvB4YRst-1).
 
  ## ToDo
 1. set landing page background like the design. 
