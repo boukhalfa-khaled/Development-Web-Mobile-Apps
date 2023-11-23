@@ -13,5 +13,6 @@ At the moment, You can access all the material via Google Drive
  [Here](https://drive.google.com/drive/folders/1aywXpUXIaBCxYRNPinzlQglaqyzvrn-I).
 
  ## ToDo
-1. Use Figma to design the website.
-2. Get started coding using HTML, CSS, and vanilla JavaScript(No framework).
+1. set landing page background like the design. 
+2. making landing page responsive.
+
