@@ -12,36 +12,52 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <div class="vertical_line left"></div>
-    <div class="vertical_line right"></div>
-    <nav>
+    <!-- <div class="vertical_line left"></div> -->
+    <!-- <div class="vertical_line right"></div> -->
+    <header>
       <div class="container">
-        <a class="logo" href="./index.html">logo</a>
-        <ul class="nav__items">
-          <li><a href="#firstYear">First Year</a></li>
-          <li><a href="#secondYear">Second Year</a></li>
-          <li><a href="#thirdYear">Third Year</a></li>
-          <li><a href="#roadmaps">Road Maps</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
+        <div class="logo" href="./index.html">
+          <img src="img/logo.png" alt="">
+        </div>
+        <nav>
+          <ul class="nav__items">
+            <li><a href="#firstYear">1st Year</a></li>
+            <li><a href="#secondYear">2nd Year</a></li>
+            <li><a href="#thirdYear">3rd Year</a></li>
+            <li><a href="#roadmaps">Road Maps</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
       </div>
-    </nav>
+    </header>
     <section class="landingPage">
       <div class="container">
+        <div class="landingPage__titleAndDes">
         <h1 class="landingPage__title">
           We’re Building A Hub For Web
           <span class="gridEfect">Devolopors</span>
           Students
         </h1>
         <p class="landingPage__description">
-          practical lessons,resources,and guides and more, all in one place
+          practical lessons,resources and guides and more, all in one place
         </p>
-        <button class="landingPage__btn btn">learn more</button>
+        </div>
+
+        <div class="landingPage__imgAndQuote">
+          <div class="landingPage__image">
+            <img src="img/landingPage-image.png" alt="">
+          </div>
+            <p class="landingPage__quote">" There Are No Secrets To Success It's The Result Of Preparation, Hard Work And Learning From Failure "</p>
+        </div>
       </div>
+      <a href="" class="go-down">
+        <i class="fa-solid fa-angles-down"></i>
+      </a>
     </section>
-    <section></section>
     <script src="js/main.js"></script>
   </body>
 </html>
