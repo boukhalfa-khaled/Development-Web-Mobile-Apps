@@ -1,5 +1,6 @@
 :root {
-  --color-white: #e7e5e2;
+  /* --color-white: #e7e5e2; */
+  --color-white: #fff0e5;
   --color-black: #000;
   --color-yellow: #fcfd9c;
   --color-green: #85fac1;
@@ -59,7 +60,7 @@ img {
 .shadowEffect:hover {
   /* border: 1px solid var(--color-black); */
   transform: translate(5%, -5%);
-  box-shadow: -10px 10px 0px 0px black;
+  box-shadow: -5px 5px 0px 0px black;
 }
 
 section {
@@ -111,7 +112,7 @@ nav .container {
   padding: 10px;
   width: 4rem;
   text-align: center;
-  background-color: var(--color-yellow);
+  /* background-color: var(--color-yellow); */
   border: 1px solid var(--color-black);
   transition: var(--transition);
 }
@@ -120,6 +121,18 @@ nav .container {
   display: flex;
   align-items: center;
   gap: 3rem;
+}
+.nav__items li {
+  padding: 0.4rem 0.5rem;
+  transition: var(--transition);
+  border: 1px solid var(--color-white);
+}
+.nav__items li:hover,
+.logo:hover {
+  font-weight: bold;
+  box-shadow: -5px 5px 0px 0px var(--color-black);
+  border: 1px solid var(--color-black);
+  transform: translate(5%, -5%);
 }
 
 /* landing page */
