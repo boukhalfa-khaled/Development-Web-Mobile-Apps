@@ -1,17 +1,18 @@
 :root {
-  /* --color-white: #e7e5e2; */
-  --color-white: #fff0e5;
+  --color-white: #e7e5e2;
   --color-black: #000;
   --color-yellow: #fcfd9c;
   --color-green: #85fac1;
 
   --transition: all 400ms ease;
+
   --container-width-lg: 74%;
   --container-width-md: 88%;
+
   --btn-raduis: 30px;
 }
 
-/* GENERAL*/
+/* === GENERAL ===*/
 
 * {
   margin: 0;
@@ -21,9 +22,9 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: "Space Mono", monospace;
 }
 body {
-  font-family: "Space Mono", monospace;
   line-height: 1.6;
   background: var(--color-white);
   overflow-x: hidden;
@@ -58,7 +59,6 @@ img {
 }
 
 .shadowEffect:hover {
-  /* border: 1px solid var(--color-black); */
   transform: translate(5%, -5%);
   box-shadow: -5px 5px 0px 0px black;
 }
@@ -81,8 +81,8 @@ section {
   bottom: 0;
   width: 3px;
   background-color: var(--color-black);
-  /* transform: translateX(-50%); */
 }
+
 .vertical_line.right {
   right: 5%;
 }
@@ -90,7 +90,7 @@ section {
   left: 5%;
 }
 
-/* Nav */
+/* ====  NAV === */
 nav {
   width: 100vw;
   height: 4.5rem;
@@ -135,14 +135,13 @@ nav .container {
   transform: translate(5%, -5%);
 }
 
-/* landing page */
+/*  === LANDING PAGE === */
 
 .landingPage {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* gap: 3rem; */
 }
 .landingPage .container {
   width: 45%;
@@ -178,7 +177,7 @@ nav .container {
   color: var(--color-black);
 }
 
-/* Animation */
+/* === ANIMATION === */
 @keyframes blink {
   0%,
   100% {
@@ -187,4 +186,16 @@ nav .container {
   50% {
     opacity: 0;
   }
+}
+
+/* === MEDIEM SCREEN === */
+@media screen and (max-width: 1024px) {
+  /* General */
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+/* === SMALL SCREEN === */
+@media screen and (max-width: 600px) {
 }
