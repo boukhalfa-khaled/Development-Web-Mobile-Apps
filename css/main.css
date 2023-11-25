@@ -72,9 +72,9 @@ section {
   width: 100%; 
   max-width: 820px; 
   height: auto; 
-  fill: #FCFD9C;
+  fill: var(--color-yellow);
   stroke-width: 3px;
-  stroke: #000;
+  stroke: var(--color-black);
 }
 svg{
   position: absolute;
