@@ -69,9 +69,18 @@ section {
 
 /* svg */
 .gridEfect {
-  background-color: var(--color-yellow);
-  text-align: center;
-  border: 1px solid var(--color-black);
+  width: 100%; 
+  max-width: 820px; 
+  height: auto; 
+  fill: #FCFD9C;
+  stroke-width: 3px;
+  stroke: #000;
+}
+svg{
+  position: absolute;
+  z-index: -1;
+  margin-left: -32%;
+  margin-top: -10%;
 }
 /* body*/
 .vertical_line {
