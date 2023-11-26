@@ -60,7 +60,7 @@ img {
 
 .shadowEffect:hover {
   transform: translate(5%, -5%);
-  box-shadow: -5px 5px 0px 0px black;
+  box-shadow: -5px 5px 0px 0px var(--color-black);
 }
 
 section {
@@ -68,12 +68,6 @@ section {
   border-top: 3px solid var(--color-black);
 }
 
-/* svg */
-.gridEfect {
-  background-color: var(--color-yellow);
-  text-align: center;
-  border: 1px solid var(--color-black);
-}
 /* body*/
 .vertical_line {
   position: fixed;
@@ -112,11 +106,12 @@ nav .container {
   padding: 10px;
   width: 4rem;
   text-align: center;
-  /* background-color: var(--color-yellow); */
   border: 1px solid var(--color-black);
   transition: var(--transition);
 }
-
+#open__items-btn {
+  display: none;
+}
 .nav__items {
   display: flex;
   align-items: center;
@@ -145,6 +140,7 @@ nav .container {
 }
 .landingPage .container {
   width: 45%;
+  min-width: 865px;
   text-align: center;
 }
 .landingPage__title {
@@ -163,6 +159,13 @@ nav .container {
   height: 3rem;
   background-color: var(--color-black);
   animation: blink 1s infinite;
+}
+/* svg */
+.gridEfect {
+  background-color: var(--color-yellow);
+  position: relative;
+  text-align: center;
+  border: 3px solid var(--color-black);
 }
 .landingPage__description {
   font-size: 1.25;
@@ -194,8 +197,145 @@ nav .container {
   .container {
     width: var(--container-width-md);
   }
+  .vertical_line {
+    display: none;
+  }
+  nav .container {
+    position: relative;
+  }
+  /* this style just for test, will be changed */
+  #open__items-btn {
+    display: block;
+    cursor: pointer;
+    background-color: var(--color-white);
+    transform: rotate(90deg);
+  }
+  #open__items-btn.active {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+  /* ====== */
+  .nav__items.active {
+    display: flex;
+  }
+  .nav__items {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 101%;
+    gap: 0;
+    background-color: var(--color-white);
+  }
+  .nav__items li {
+    border: none;
+    border: solid var(--color-black);
+    border-width: 0px 1px 1px 1px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+  }
+
+  .landingPage .container {
+    width: 55%;
+    min-width: 500px;
+  }
+  .landingPage__title {
+    font-size: 2rem;
+  }
+  .landingPage__title::before {
+    top: 15%;
+    width: 0.7rem;
+    height: 2rem;
+  }
+  .landingPage__description {
+    font-size: 1.25;
+    margin-bottom: 4rem;
+    width: 60%;
+    margin-inline: auto;
+  }
+  .landingPage__btn {
+    font-size: 1rem;
+  }
 }
 
 /* === SMALL SCREEN === */
 @media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+  }
+  nav .container {
+    position: relative;
+  }
+  .nav__items {
+    width: 100%;
+  }
+  .nav__items li {
+    width: 100%;
+  }
+  .nav__items li:hover {
+    box-shadow: none;
+    transform: none;
+    border-width: 0px 1px 1px 1px;
+  }
+
+  .landingPage .container {
+    width: 65%;
+    min-width: 360px;
+  }
+  .landingPage__title {
+    font-size: 1.3rem;
+  }
+  .landingPage__title::before {
+    top: 18%;
+    width: 0.5rem;
+    height: 1.3rem;
+  }
+  .landingPage__description {
+    font-size: 1;
+  }
+}
+
+/* ===*/
+/* "DEVELOPER" BACKGROUND */
+
+.gridEfect::after,
+.gridEfect::before,
+.extra-after,
+.extra-before {
+  position: absolute;
+  border: solid var(--color-black);
+  width: 3rem;
+  background-color: transparent;
+}
+.gridEfect::after {
+  content: "";
+  height: 10px;
+  border-width: 0 0 3px 3px;
+  top: calc(-10px - 3px);
+  right: calc(-3rem - 3px);
+  content: "";
+}
+.gridEfect::before {
+  content: "";
+  height: 10px;
+  border-width: 0 3px 3px 0;
+  top: calc(-10px - 3px);
+  left: calc(-3rem - 3px);
+  content: "";
+}
+.gridEfect .extra-before {
+  height: 1.4rem;
+  border-width: 3px 0 0 3px;
+  bottom: calc(-1.4rem);
+  right: calc(-3rem);
+}
+.gridEfect .extra-after {
+  height: 1.4rem;
+  border-width: 3px 3px 0 0;
+  bottom: calc(-1.4rem);
+  left: calc(-3rem);
 }
