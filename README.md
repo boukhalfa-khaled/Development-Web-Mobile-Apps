@@ -16,6 +16,7 @@ At the moment, You can access all the material via Google Drive
 [Figma Design](https://www.figma.com/file/oVCo0DbcwBdaz7TMJ1Xrd0/Development-Web-%26-mobile-application?type=design&node-id=0%3A1&mode=design&t=10CHSMkuGvB4YRst-1).
 
  ## ToDo
-1. set landing page background like the design. 
-2. making landing page responsive.
+1. set landing page background like the design. [done] 
+2. making landing page responsive. [done]
+3. complete the design in figma.
 
