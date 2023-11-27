@@ -208,12 +208,46 @@ nav .container {
     display: block;
     cursor: pointer;
     background-color: var(--color-white);
-    transform: rotate(90deg);
+    position: relative;
+    height: 14px;
+    width: 20px;
   }
-  #open__items-btn.active {
+  #open__items-btn span {
     background-color: var(--color-black);
-    color: var(--color-white);
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: var(--transition);
   }
+
+  #open__items-btn span:first-child {
+    top: 0;
+  }
+
+  #open__items-btn span:nth-child(2) {
+    top: 6px;
+  }
+
+  #open__items-btn span:last-child {
+    top: 12px;
+  }
+
+  #open__items-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  #open__items-btn.active span:first-child,
+  #open__items-btn.active span:last-child {
+    top: 6px;
+  }
+
+  #open__items-btn.active span:last-child {
+    transform: rotate(45deg);
+  }
+  #open__items-btn.active span:first-child {
+    transform: rotate(-45deg);
+  }
+
   /* ====== */
   .nav__items.active {
     display: flex;
