@@ -18,5 +18,5 @@ At the moment, You can access all the material via Google Drive
  ## ToDo
 1. set landing page background like the design. [Done] 
 2. making landing page responsive. [Done]
-3. complete the design in figma. [I need someone good in design]
+3. complete the design in figma. [We need someone good in design]
 
